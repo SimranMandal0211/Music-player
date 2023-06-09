@@ -53,3 +53,23 @@ let responsiveSlider = function () {
 window.onload = function(){
     responsiveSlider();
 }
+
+
+// like button color change....
+
+let like = document.querySelectorAll('.like').forEach(function(likeBtn){
+    likeBtn.addEventListener("click",function(e){
+
+        if(likeBtn.classList.contains('fa-regular')){
+            likeBtn.classList.remove('fa-regular');
+            likeBtn.classList.add('fa-solid');
+            likeBtn.style.color = 'red';
+        }
+        
+        else if(likeBtn.classList.contains('fa-solid')){
+            likeBtn.classList.remove('fa-solid');
+            likeBtn.classList.add('fa-regular');
+            likeBtn.style.color = 'gray';
+        }
+    })
+});
