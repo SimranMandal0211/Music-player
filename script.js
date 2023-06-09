@@ -73,3 +73,30 @@ let like = document.querySelectorAll('.like').forEach(function(likeBtn){
         }
     })
 });
+
+
+// playing music icon ............
+
+let songIcon = document.querySelectorAll('.fa-chart-simple');
+let songNum = document.querySelectorAll('span.songNum');
+songNum.forEach(function(songNumItem){
+    songNumItem.addEventListener('click', function(e){
+
+        let number = parseInt(document.querySelectorAll('span.songNum'));
+
+        alert("function");
+
+        if(!number){
+            alert("if");
+            songNum.style.display = "block";
+            songIcon.style.display = "none";
+        }
+        else{
+            alert("else");
+            songNum.style.display = "none";
+            songIcon.style.display = "block";
+        }
+    });
+})
+
+// -------------------------------------------------------------
