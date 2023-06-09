@@ -12,3 +12,112 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+
+/* ------------------------------------ */
+
+/* footer */
+footer{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    position: relative;
+    /* height: auto; */
+    width: 100%;
+}
+/* 1 */
+.play-song{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.play-song img{
+    width: 40px;
+    height: 40px;
+}
+.play-song .play-detail{
+    padding: 0 1rem;
+    margin: .5rem 0;
+}
+
+.play-detail p{
+    margin: 0;
+    padding-bottom: .3rem;
+    font-size: .8rem;
+}
+.play-detail-singer{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.play-react .fa-circle-half-stroke{ 
+    margin-left: 10px;
+    transform: rotate(120deg);
+}
+/* 2 */
+.audio-operator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* 2.1 */
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+
+}
+.time-play{
+    text-align: center;
+}
+.time-play input{
+    width: 25rem;
+    height: .2rem;
+    padding: .5rem 0;
+    background-color: green;
+}
+/* 3 */
+.volume{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+}
+.volume input{
+    width: 5rem;
+    height: .3rem;
+}
+
+@media screen and (max-width:1200px) {
+    .time-play input {
+        width: 15rem;
+    }
+
+    .volume {
+        width: 25%;
+    }
+}
+
+/* @media screen and (max-width:992px) {
+    .time-play input {
+        width: 15rem;
+    }
+    .volume {
+        width: 25%;
+    }
+} */
+@media screen and (max-width:768px) {
+   footer{
+    position:fixed;
+    flex-wrap: wrap;
+    max-height:fit-content;
+    padding: 0 .5rem;
+   }
+   .time-play input{
+        width: 10rem;
+   }
+}
