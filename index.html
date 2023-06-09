@@ -274,7 +274,17 @@
                     </div>
                 </div>
 
-                
+                <script>
+                    let imgPlay = document.getElementById('imgPlay');
+                    let playIcon = document.querySelectorAll('.play-img-box');
+                    imgPlay.addEventListener("mouseover", () => {
+                        playIcon.style.display = "block";
+                    });
+
+                    imgPlay.addEventListener("mouseout", () => {
+                        playIcon.style.display = "none";
+                    });
+                </script>
             </section>
         </aside>
     </main>
