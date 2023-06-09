@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Song</title>
+
+    <script src="https://kit.fontawesome.com/df98e19b56.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+        <div class="play-song">
+            <img src="images\musicIcon.webp" alt="" class="song-img">
+            <div class="play-detail">
+                <p class="play-detail-singer">Imagine By John</p>
+                <p>John Lennon</p>
+            </div>
+            <div class="play-react">
+                <i class="fa-regular fa-heart like"></i>
+                <i class="fa fa-thin fa-circle-half-stroke"></i>
+            </div>
+        </div>
+
+        <div class="audio-operator">
+            <audio id="audio-song"> <!-- controls -->
+                <!-- <source src="sound.m4a" type="audio/ogg"> -->
+                <source src="musicAudio.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="controls">
+                <div><i class="fa-solid fa-shuffle"></i></div>
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+                <div><i class="fa-solid fa-repeat"></i></div>
+            </div>
+
+            <div class="time-play">
+                <span>0:00</span>
+                <input type="range" value="0" id="progress">
+                <span>0:00</span>
+            </div>
+        </div>
+
+        <div class="volume">
+            <div><i class="fa-solid fa-list"></i></div>
+            <div><i class="fa-solid fa-computer"></i></div>
+            <div><i class='fa fa-volume-up'></i></div>
+
+            <input type="range" value="0" id="vol-progress">
+            <div><i class="fa-sharp fa-solid fa-up-right-and-down-left-from-center"></i></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
