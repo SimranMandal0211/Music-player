@@ -349,6 +349,182 @@ main{
     font-size: .8rem;
 }
 
+/* ----------------------------- */
+
+/* aside */
+aside{
+    color: #a9a9a9;
+    width: 25%;
+    height: 100%;
+    overflow:hidden;
+    background-color: #171727;
+}
+
+section{
+    width: 100%;
+    padding: 0 1rem;
+}
+.aside-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0;
+}
+.aside-heading h2{
+    display: inline-block;
+}
+.aside-heading p{
+    font-size: .7rem;
+}
+
+/* similar song aside */
+.aside-sub-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: .8rem 0;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+}
+.aside-sub-container img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: .2rem;
+}
+
+.aside-sub-container > img:hover{
+    filter: blur(1px);
+}
+
+.aside-sub-container > .play-img-box{
+    display: none;
+    position: absolute;
+    right: 88%;
+    font-size: 1.5rem;
+    color: rgb(228, 228, 228);
+    z-index: 1;
+}
+
+.aside-song-detail{
+    /* margin: 0 3rem 0 1rem; */
+    padding-right: 4rem;
+}
+.aside-song-detail h3{
+    font-size: .8rem;
+    padding-bottom: .5rem;
+}
+.aside-song-detail p{
+    font-size: .6rem;
+}
+.similar-song-side{
+    font-size: .7rem;
+    text-align: center;
+}
+
+/* recently played aside */
+.recent-list{
+    max-height: auto;
+    overflow-y: scroll ;
+}
+.recent-sub-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .8rem 0;
+    cursor: pointer;
+    
+}
+.recent-sub-container > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    /* border: 2px solid green; */
+}
+.recent-sub-container img{
+    width: 2rem;
+    height: 2rem;
+}
+.recent-songs{
+    margin-right: 60px;
+}
+
+.fa-chart-simple{
+    display: none;
+    color: skyblue;
+}
+
+span.songNum{
+    display: block;
+}
+.play-img-box{
+    display: block;
+}
+
+@media screen and (max-width:1200px) {
+    .aside-song-detail {
+        padding-right: 0rem;
+    } 
+}
+
+@media screen and (max-width:992px) {
+    .slider-data-detail div{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    section{
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+    .carousel{
+        width: 100%;
+    }
+    .playlist{
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+    }
+    aside{
+        width: 100%;
+        display: flex;
+    }
+    aside + section{
+        border-right: 2px solid gray;
+
+    }
+    .aside-sub-container img{
+        width: 2.5rem;
+        height: 2.5rem;
+    } 
+    .aside-song-detail {
+        margin-left: 1rem;
+    } 
+    section{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:576px){
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    } 
+    section{
+        width: 100%;
+    }
+}
+
 
 /* ------------------------------------ */
 
